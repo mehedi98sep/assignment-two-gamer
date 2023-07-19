@@ -82,7 +82,7 @@ nav{
 /* background-image: url(images/Group\ 14.png), linear-gradient(223deg, rgba(77, 0, 220, 0.059) 0%, rgba(241, 68, 174, 0.03) 100%) ; */
 /* goat related styles  */
 .goat{
-    background-image: url(images/Group\ 14.png), linear-gradient(223deg, rgba(80, 49, 138, 0.059) 0%, rgba(255, 255, 255, 0.03) 100%) ;
+    background-image: url(images/Group\ 14.png), linear-gradient(223deg, rgba(215, 190, 250, 0.059) 0%, rgba(255, 255, 255, 0.03) 100%) ;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -187,15 +187,24 @@ nav{
 
  
 /* goat responsive  */
+.goat{
+   background-image: none;
+}
 .goat-container{
     flex-direction: column;
-    gap: 40px;
+    gap: 40px; 
+}
+.goat-container > div{
+    width: 100%;
 }
 .goat-content{
-    width: 80%:
+    display: grid;
+    justify-content: center;
     margin-left: 0;
-    margin:0 auto ;
-    text-align: content;
+    padding: 20px 0;
+    background-image: url(images/Group\ 14.png), linear-gradient(223deg, rgba(77, 0, 220, 0.059) 0%, rgba(241, 68, 174, 0.03) 100%) ;
+    background-position: center;
+    background-size: cover;
 }
 .goat-content-title{
     font-size: 25px;
@@ -205,6 +214,7 @@ nav{
 }
 .goat-content h1,h2,p{
     margin-bottom: 10px;
+
 }
 .btn-sign, .btn-rogue{
     margin: 5px 0;
