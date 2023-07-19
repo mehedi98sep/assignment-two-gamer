@@ -17,7 +17,7 @@ body button{
 
 /* nav related styles  */
 nav{
-    /* background-color:rgba(255, 228, 196, 0.334); */
+    background-color:rgba(227, 164, 86, 0.101);
 }
 .nav{
     margin:0 auto;
@@ -283,6 +283,66 @@ nav{
 
 
 
+/* footer related styles  */
+footer{
+    background-color: black;
+    min-height: 300px;
+    padding: 150px 0;
+}
+.footer-holder{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding-top: 70px; */
+    display: flex;
+   justify-content: center;
+   
+}
+.footer-logo{
+    width: 40%;
+    margin: 0 auto 30px;
+
+}
+.footer-title{
+    color: white;
+}
+.footer-links {
+display: flex;
+gap: 20px;
+}
+.footer-links a{
+   text-decoration: none;
+   color: white;
+   font-weight: 600;
+   font-size: 14px;
+}
+.footer-social-links{
+    font-size: 30px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-evenly;
+}
+.footer-social-links a{
+    text-decoration: none;
+}
+.footer-privacy-links a{
+    text-decoration: none;
+    color: rgba(180, 174, 174, 0.744);
+    font-weight: 500;
+    font-size: 14px;
+}
+.footer-privacy-links{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.copyright{
+    text-align: center;
+    width: 100%;
+    color: rgba(180, 174, 174, 0.744);
+}
+
+
+
 
 
 
@@ -342,10 +402,9 @@ nav{
     margin-bottom: 10px;
 }
 .btn-sign, .btn-rogue{
-    margin: 5px 0;
-    padding: 8px 13px;
-    font-size: 13px;
-    margin-right: 20px;
+    margin: 5px auto;
+    padding: 10px 15px;
+    font-size: 15px;
 }
 .goat-btn-container {
     margin: 20px auto;
@@ -414,4 +473,33 @@ nav{
 .btn-card span{
     font-size: 12px;
 }
+
+
+/* footer responsive styles  */
+.footer-container{
+    margin:80px 20px
+}
+.footer-links{
+    margin: 10px 15px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    align-items: center;
+    justify-content: center;
+}
+.footer-social-links{
+    text-align: center;
+    margin: 30px 15px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3 , 1fr);
+    text-align: center;
+}
+.footer-privacy-links{
+    text-align: center;
+    margin: 15px 15px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    text-align: center;
+}
+
 }
