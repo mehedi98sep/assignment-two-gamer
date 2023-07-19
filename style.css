@@ -7,6 +7,9 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+body button{
+    cursor: pointer;
+}
 
 
 
@@ -242,6 +245,41 @@ nav{
 
 
 
+/* BUTTON RELATED STYLES  */
+.btn-container{
+    max-width: 1100px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.btn-card span{
+    color: #0B0223;
+    font-size: 15px;
+    font-weight: 600;
+}
+.btn-card span:hover{
+    color: #f948b2;
+}
+.btn-card{
+    border: 0;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 15px;
+}
+.btn-card:hover{
+    border-radius: 40px;
+    border: 2px solid #f948b2 ;
+
+}
+.btn-card img{
+    width: 50px;
+}
+
+
 
 
 
@@ -289,6 +327,7 @@ nav{
     justify-content: center;
     margin-left: 0;
     padding: 20px 0;
+    padding-left: 60px;
     background-image: url(images/Group\ 14.png), linear-gradient(223deg, rgba(77, 0, 220, 0.059) 0%, rgba(241, 68, 174, 0.03) 100%) ;
     background-position: center;
     background-size: cover;
@@ -299,13 +338,18 @@ nav{
 .goat-text{
     font-size: 35px;
 }
-.goat-content h1,h2,p{
+.goat-content h1,h2{
     margin-bottom: 10px;
 }
+.goat-content
 .btn-sign, .btn-rogue{
     margin: 5px 0;
     padding: 8px 13px;
     font-size: 13px;
+}
+.goat-btn-container {
+    margin: 20px auto;
+    gap: 10px;
 }
 
 
@@ -353,5 +397,22 @@ nav{
 .small-pic{
     top: 150px;
     left: 20px;
+}
+
+
+/* button responsive styles  */
+.btn-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.btn-card img{
+    width:35px;
+}
+.btn-card{
+    gap: 5px;
+}
+.btn-card span{
+    font-size: 12px;
 }
 }
