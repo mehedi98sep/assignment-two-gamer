@@ -79,6 +79,7 @@ nav{
 
 
 
+
 /* background-image: url(images/Group\ 14.png), linear-gradient(223deg, rgba(77, 0, 220, 0.059) 0%, rgba(241, 68, 174, 0.03) 100%) ; */
 /* goat related styles  */
 .goat{
@@ -105,9 +106,8 @@ nav{
     font-size: 80px;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }.goat-content{
    
     margin-left: 132px;
@@ -153,7 +153,7 @@ nav{
 /* online related styles  */
 .online-container{
     max-width: 1100px;
-    margin:0 auto;
+    margin:0px auto;
 }
 .online-container h3{
     font-size: 35px;
@@ -163,9 +163,8 @@ nav{
 }
 .online-container h3 span{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+     color: transparent;
 }
 .online-des{
     color: #534C64;
@@ -193,7 +192,51 @@ nav{
 
 
 
-
+/* instantly section rleated styles  */
+.instantly-container{
+    max-width: 1100px;
+    margin:100px auto;
+    display: flex;
+}
+.instantly-text-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instantly-title{
+    font-size: 35px;
+    color: rgba(11, 2, 35, 1);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.instantly-title span{
+    color: #f948b2;
+}
+.instantly-des{
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 500;
+}
+.instantly-img-container{
+    width: 50%;
+    position: relative;
+}
+.horseman-pic{
+    display: flex;
+    justify-content: end;
+}
+.horseman-pic img{
+    width: 80%;
+}
+.small-pic img{
+    width: 60%;
+}
+.small-pic{
+    position: absolute;
+    top: 280px;
+    /* left: 10px; */
+}
 
 
 
@@ -210,6 +253,9 @@ nav{
 
 /* Mobile device responsive  */
 @media screen and (max-width:576px) {
+    body{
+        margin: 10px;
+    }
    .nav{
      flex-direction: column;
      gap: 30px;
@@ -255,7 +301,6 @@ nav{
 }
 .goat-content h1,h2,p{
     margin-bottom: 10px;
-
 }
 .btn-sign, .btn-rogue{
     margin: 5px 0;
@@ -275,5 +320,38 @@ nav{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+
+/* instantly responsive  */
+.instantly-container {
+    flex-direction: column;
+
+}
+.instantly-title, .instantly-des{
+  text-align: center;
+}
+.instantly-text-container{
+    margin-bottom: 40px;
+}
+.instantly-container > div {
+    width: 100%;
+}
+.instantly-title{
+    font-size: 25px;
+}
+.instantly-des{
+    font-size: 12px;
+}
+.horseman-pic img{
+    margin-right: 40px;
+    width: 70%;
+}
+.small-pic img{
+    width: 40%;
+}
+.small-pic{
+    top: 150px;
+    left: 20px;
 }
 }
