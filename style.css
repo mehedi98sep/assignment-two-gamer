@@ -73,3 +73,45 @@ nav{
 .social-links i{
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile device responsive  */
+@media screen and (max-width:576px) {
+   .nav{
+     flex-direction: column;
+     gap: 30px;
+   }
+   .nav > div{ 
+    width: 100%;
+    text-align: center;
+}
+   .nav-links-container{
+    flex-direction: column;
+    gap: 30px;
+   }
+   .nav-logo-container {
+    justify-content: center;
+   }
+}
