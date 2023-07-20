@@ -188,6 +188,9 @@ nav{
 }
 .card{
     width: 100%;
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 500;
 }
 .child-card{
     height: 100%;
@@ -198,7 +201,7 @@ nav{
     right:0 ;
     top:    0;
     color: #e0004f;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 25px;
     opacity:0 ;
     background-color:rgba(0, 0, 0, 0.458) ;
@@ -247,14 +250,16 @@ img{
 .instantly-text-container{
     width: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 .instantly-title{
     font-size: 35px;
     color: rgba(11, 2, 35, 1);
     font-weight: 700;
     margin-bottom: 20px;
+    width: 50%;
+    margin: 0 auto 20px;
 }
 .instantly-title span{
     color: #f948b2;
@@ -263,6 +268,8 @@ img{
     color: #534C64;
     font-size: 14px;
     font-weight: 500;
+    width: 50%;
+    margin: 0 auto;
 }
 .instantly-img-container{
     width: 50%;
@@ -295,7 +302,7 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 49px;
 }
 .btn-card span{
     color: #0B0223;
@@ -413,9 +420,12 @@ gap: 20px;
 
 
 
-
+.hide{
+    display: none;
+}
 /* Mobile device responsive  */
 @media screen and (max-width:576px) {
+  
    .nav{
      flex-direction: column;
      gap: 30px;
@@ -470,7 +480,8 @@ gap: 20px;
    margin: 10px 0;
 }
 .goat-imgs img{
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 
@@ -490,6 +501,9 @@ gap: 20px;
     flex-direction: column;
     align-items: center;
 }
+.single-card{
+    margin-bottom: 40px;
+}
 
 /* instantly responsive  */
 .instantly-container {
@@ -497,7 +511,7 @@ gap: 20px;
 
 }
 .instantly-title, .instantly-des{
-  text-align: center;
+
 }
 .instantly-text-container{
     margin-bottom: 40px;
@@ -507,9 +521,12 @@ gap: 20px;
 }
 .instantly-title{
     font-size: 25px;
+/
 }
 .instantly-des{
     font-size: 12px;
+    width: 70%;
+    text-align: center;
 }
 .horseman-pic img{
     margin-right: 40px;
@@ -525,17 +542,23 @@ gap: 20px;
 
 
 /* button responsive styles  */
+.btn-section{
+    max-width: auto;
+    margin:70px 10px ;
+    /* margin-top: 50px; */
+}
 .btn-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
 }
 .btn-card img{
     width:35px;
 }
-.btn-card{
-   
-}
+
 .btn-card span{
     font-size: 12px;
 }
@@ -577,7 +600,7 @@ gap: 20px;
 / */
 /* medium device responsive  */
 @media screen and (min-width:576px) and (max-width:960px) {
-    body{
+    main{
         padding:0 50px;
     }
    .nav{
@@ -652,6 +675,9 @@ gap: 20px;
 grid-template-columns: 1fr 1fr;
 gap: 20px;
 }
+.single-card{
+    margin-bottom: 40px;
+}
 
 
 /* instantly responsive  */
@@ -670,9 +696,12 @@ gap: 20px;
 }
 .instantly-title{
     font-size: 25px;
+/
 }
 .instantly-des{
     font-size: 12px;
+    width: 70%;
+    text-align: center;
 }
 .horseman-pic img{
     margin-right: 40px;
@@ -688,6 +717,9 @@ gap: 20px;
 
 
 /* button responsive styles  */
+.btn-section{
+    margin-top: 200px;
+}
 .btn-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
