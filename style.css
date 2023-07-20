@@ -314,10 +314,11 @@ img{
 }
 .btn-content img{
     width: 30px;
-    height: 30px;
+    height: 30px;    
 }
 .btn-content{
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
     gap: 5px;
@@ -331,6 +332,7 @@ img{
     color:#F948B2;
 }
 .btn-content p{
+    margin: auto 0;
     font-size: 14px;
     font-weight: 600;
 }
@@ -720,24 +722,15 @@ gap: 20px;
 .btn-section{
     margin-top: 200px;
 }
-.btn-container{
+.all-btn-container{
+    box-shadow: 2px 2px 5px  rgba(250, 128, 114, 0.474);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    padding-left: 50px;
-}
-.btn-card img{
-    width:35px;
-}
-.btn-card{
-    gap: 10px;
-}
-.btn-card span{
-    font-size: 16px;
-}
-.last-btn{
-    margin-left: 150px;
-}
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 15px;
+    flex-wrap: wrap;
+} 
+
 
 
 /* footer responsive styles  */
